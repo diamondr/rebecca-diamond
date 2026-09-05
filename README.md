@@ -33,7 +33,7 @@ GitHub Pages is configured to publish the `docs` directory on the `main` branch.
 
 The default site URL is `https://www.rebecca-diamond.com/`. The build writes the custom-domain CNAME file so future updates preserve this setting. Override `SITE_URL` when rebuilding for a custom domain. The `home/` compatibility page redirects to the homepage, and `research/` retains the existing research path.
 
-The custom-domain cutover is prepared locally. Before publishing it, confirm access to the Squarespace domain settings. Connect `www.rebecca-diamond.com` in GitHub Pages first, then change Squarespace DNS: `www` CNAME to `diamondr.github.io`, and apex A records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`. Preserve unrelated DNS records. Verify both domain variants and HTTPS, then record completion here.
+The domain is registered with Squarespace and connected to GitHub Pages. `www.rebecca-diamond.com` uses a CNAME to `diamondr.github.io`; the apex uses GitHub's four A records (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and redirects to `www`. The former Squarespace forwarding rule was removed; other DNS records are preserved. GitHub has confirmed that DNS is valid for both addresses. HTTPS certificate provisioning is pending as of September 5, 2026.
 
 ## Sources and content notes
 
