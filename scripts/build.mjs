@@ -5,7 +5,7 @@ const root = path.resolve(import.meta.dirname, '..');
 const output = path.join(root, 'docs');
 const readJSON = async name => JSON.parse(await readFile(path.join(root, 'content', name), 'utf8'));
 const [profile, papers, work] = await Promise.all(['profile.json', 'papers.json', 'work-in-progress.json'].map(readJSON));
-const origin = (process.env.SITE_URL || 'https://diamondr.github.io/rebecca-diamond').replace(/\/$/, '');
+const origin = (process.env.SITE_URL || 'https://www.rebecca-diamond.com').replace(/\/$/, '');
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const json = value => JSON.stringify(value).replace(/</g, '\\u003c');
 const authors = values => values.length < 2 ? values.join('') : values.length === 2 ? values.join(' and ') : values.slice(0, -1).join(', ') + ', and ' + values.at(-1);
@@ -79,6 +79,7 @@ await save('cv/index.html',redirect({title:'Curriculum vitae',target:resource('.
 await save('home/index.html',redirect({title:'Rebecca Diamond',target:'../',prefix:'../',route:''}));
 await save('404.html',page({title:'Page not found | Rebecca Diamond',description:'This page could not be found.',prefix:origin+'/',body:'<div class="redirect-page"><h1>Page not found</h1><p>The page may have moved. <a href="'+origin+'/">Return to the homepage</a> or <a href="'+origin+'/research/">browse the research</a>.</p></div>'}));
 await save('.nojekyll','');
+if (!new URL(origin).hostname.endsWith('.github.io')) await save('CNAME',new URL(origin).hostname+'\n');
 await save('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
 await save('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['','research/'].map(route => `<url><loc>${esc(origin+'/'+route)}</loc></url>`).join('')}</urlset>\n`);
 console.log(`Built home and research, retaining ${papers.length} paper URL redirects and citation downloads.`);

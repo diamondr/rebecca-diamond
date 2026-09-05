@@ -31,9 +31,9 @@ The local preview is at `http://127.0.0.1:4173/`. The build generates `docs/`, w
 
 GitHub Pages is configured to publish the `docs` directory on the `main` branch. After editing, run the build and checks, then commit the source and generated `docs/` together. Pushing to `main` publishes the change.
 
-The default site URL is `https://diamondr.github.io/rebecca-diamond/`. Override `SITE_URL` when rebuilding for a custom domain. The `home/` compatibility page redirects to the homepage, and `research/` retains the existing research path.
+The default site URL is `https://www.rebecca-diamond.com/`. The build writes the custom-domain CNAME file so future updates preserve this setting. Override `SITE_URL` when rebuilding for a custom domain. The `home/` compatibility page redirects to the homepage, and `research/` retains the existing research path.
 
-No custom domain is set in this repository. Connecting `www.rebecca-diamond.com` is a separate cutover requiring the domain's DNS settings. At cutover, set the custom domain in GitHub Pages, update DNS, rebuild with `SITE_URL=https://www.rebecca-diamond.com`, and verify HTTPS and old URLs. Keep the current site available until the new domain setup has been verified.
+The custom-domain cutover is prepared locally. Before publishing it, confirm access to the Squarespace domain settings. Connect `www.rebecca-diamond.com` in GitHub Pages first, then change Squarespace DNS: `www` CNAME to `diamondr.github.io`, and apex A records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`. Preserve unrelated DNS records. Verify both domain variants and HTTPS, then record completion here.
 
 ## Sources and content notes
 
