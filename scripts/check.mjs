@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import vm from 'node:vm';
+import { createHash } from 'node:crypto';
 
 const root = path.resolve(import.meta.dirname, '..');
 const output = path.join(root, 'docs');
@@ -13,7 +14,7 @@ const htmlFiles = generated.filter(f=>f.endsWith('.html'));
 const documents = new Map(await Promise.all(htmlFiles.map(async f=>[f,await readFile(f,'utf8')])));
 let linkCount=0;
 for(const [file,html] of documents) {
-  assert.equal((html.match(/<h1[\s>]/g)||[]).length, file.endsWith('/home/index.html')?0:1, `One H1: ${file}`);
+  assert.equal((html.match(/<h1[\s>]/g)||[]).length, 1, `One H1: ${file}`);
   assert.match(html,/<html lang="en">/);
   assert.match(html,/<meta name="viewport"/);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
@@ -33,6 +34,15 @@ for(const [file,html] of documents) {
     linkCount++;
   }
 }
+// Reading a paper must not require navigating through a duplicate detail page.
+const home = documents.get(path.join(output,'index.html'));
+const research = documents.get(path.join(output,'research/index.html'));
+for (const html of [home,research]) {
+  assert.ok(!html.includes('>Details</a>'));
+  assert.match(html, /<details class="paper-abstract">/);
+  assert.match(html, /aria-label="Curriculum vitae \(PDF\)"/);
+  for (const m of html.matchAll(/<h3><a href="([^"]+)"/g)) assert.match(m[1],/^\.\.?\/files\/[^/]+\.pdf$/,'Paper titles open locally hosted PDFs directly');
+}
 const papers = JSON.parse(await readFile(path.join(root,'content/papers.json'),'utf8'));
 assert.equal(papers.length,21,'All existing papers are retained');
 assert.equal(new Set(papers.map(p=>p.slug)).size,21,'Unique paper URLs');
@@ -42,6 +52,19 @@ assert.ok(papers.filter(p=>p.recent).every(p=>p.abstract.length>100&&p.citation)
 for(const html of documents.values()) {
   assert.ok(!/>(?:Code|Data|Replication|Awards|Featured press)<\//i.test(html),'No excluded sections or resource links');
 }
+
+const manifest = JSON.parse(await readFile(path.join(root,'content/pdf-manifest.json'),'utf8'));
+assert.equal(manifest.length,23,'All original papers and CV are hosted locally');
+assert.equal((await readdir(path.join(root,'files'))).length,23,'No stray downloads');
+for (const record of manifest) {
+  for (const base of [root,output]) {
+    const bytes = await readFile(path.join(base,record.file));
+    assert.equal(bytes.subarray(0,5).toString(),'%PDF-');
+    assert.equal(bytes.length,record.bytes);
+    assert.equal(createHash('sha256').update(bytes).digest('hex'),record.sha256,`Original PDF preserved: ${record.file}`);
+  }
+}
+for (const html of documents.values()) assert.ok(!html.includes('sharepoint.com'),'No SharePoint links');
 
 // Exercise the actual browser script against a minimal DOM to verify filtering,
 // Unicode matching, query restoration, empty states, and reset behavior.
@@ -71,4 +94,4 @@ controls['paper-search'].value='nonexistent'; controls['paper-search'].listeners
 assert.equal(controls['no-results'].hidden,false); assert.equal(group.hidden,true);
 controls['clear-search'].listeners.click();
 assert.ok(rows.every(r=>!r.hidden)); assert.equal(group.hidden,false); assert.equal(controls['no-results'].hidden,true); assert.equal(lastUrl,'/research/');
-console.log(`Passed: ${htmlFiles.length} HTML pages, ${linkCount} internal links/assets, research migration, and search interaction checks.`);
+console.log(`Passed: ${htmlFiles.length} HTML pages, ${linkCount} internal links/assets, 23 original PDFs, research migration, and search interaction checks.`);

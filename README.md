@@ -7,10 +7,13 @@ A small, static academic website, hosted on GitHub Pages. No framework, package 
 - `content/profile.json`: affiliation, contact details, CV link, and short introduction.
 - `content/papers.json`: research titles, coauthors, dates, publication status, links, and optional abstracts. Set `recent: true` on the three papers to display on the homepage.
 - `content/work-in-progress.json`: work without a current standalone paper page.
+- `files/`: original paper PDFs and CV, served directly by GitHub Pages.
+- `content/pdf-manifest.json`: original filenames, page counts, sizes, and SHA-256 checksums.
 - `assets/rebecca-diamond.jpg`: portrait from the existing website.
 - `assets/style.css`: shared visual styles and mobile layouts.
+- `assets/fonts/`: self-hosted Newsreader typeface and its SIL Open Font License.
 
-Preserve a paper's `slug` when updating its title or status: the slug is its permanent URL. Use the actual paper's author order in `authors` and verified BibTeX in `citation`; omit these fields when not verified. Do not add code or data links. Keep the tone factual and restrained.
+Preserve a paper's `slug` when updating its title or status: it identifies the paper in the research list. Previously published individual paper URLs redirect to those list entries. Use the actual paper's author order in `authors` and verified BibTeX in `citation`; omit these fields when not verified. Do not add code or data links. Keep the tone factual and restrained.
 
 ## Build and preview
 
@@ -22,7 +25,7 @@ npm run check
 npm run dev
 ```
 
-The local preview is at `http://127.0.0.1:4173/`. The build generates `docs/`, including all paper pages, shared assets, sitemap, and a `.nojekyll` file. Core content and navigation work without JavaScript; search and topic filtering are progressive enhancements.
+The local preview is at `http://127.0.0.1:4173/`. The build generates `docs/`, with the homepage, the full research list, compatibility redirects, shared assets, sitemap, and a `.nojekyll` file. Paper titles link directly to PDFs; verified abstracts expand in place on both pages. CV navigation links directly to the document. Core content and navigation work without JavaScript; search and topic filtering are progressive enhancements.
 
 ## Publish
 
@@ -36,7 +39,7 @@ No custom domain is set in this repository. Connecting `www.rebecca-diamond.com`
 
 The research list, publication statuses, CV link, office details, and portrait were migrated from Rebecca's public website on September 5, 2026. The homepage highlights three 2026 working papers. All 21 linked papers and three works in progress are retained.
 
-Abstracts and citation metadata for the recent GLP-1 and rental-property papers come from their NBER pages, using the June 2026 NBER versions. Existing author-draft dates remain as listed on the original website. The HOPE VI abstract, author order, and public PDF are from Opportunity Insights. Source links appear beside the abstracts. Other paper abstracts and exact citation records are omitted until verified.
+Abstracts and citation metadata for the recent GLP-1 and rental-property papers come from their NBER pages, using the June 2026 NBER versions. Existing author-draft dates remain as listed on the original website. The HOPE VI abstract and author order are from Opportunity Insights. Source links appear beside the abstracts. Other paper abstracts and exact citation records are omitted until verified.
 
 - https://www.rebecca-diamond.com/
 - https://www.rebecca-diamond.com/research
@@ -44,6 +47,6 @@ Abstracts and citation metadata for the recent GLP-1 and rental-property papers 
 - https://www.nber.org/papers/w35258
 - https://opportunityinsights.org/paper/hopevi/
 
-The original SharePoint links are preserved except for HOPE VI, which uses the verified public PDF from Opportunity Insights. Automated downloads of SharePoint documents returned HTTP 403, so their anonymous visitor access could not be verified. The CV remains a link to the original document, keeping updates under the owner's existing workflow.
+All 23 PDFs—including the CV and original rent-control draft—were downloaded from the original website through the browser and are now hosted in this repository. Each file was checked as a readable PDF and retained byte for byte. There are no SharePoint links in the generated website. Updating a document now means replacing its file in `files/`, updating its size, page count, and SHA-256 in the manifest, and rebuilding the website.
 
-The build checks all internal links and anchors, paper counts, homepage recency, excluded code/data sections, and search/filter behavior. External SharePoint access should be checked by the owner before moving the custom domain.
+The build checks all internal links and anchors, paper counts, homepage recency, excluded code/data sections, search/filter behavior, and the checksums of all source and published PDF copies.
