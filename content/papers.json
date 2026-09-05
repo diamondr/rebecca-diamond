@@ -1,0 +1,429 @@
+[
+  {
+    "slug": "glp-1-obesity-penalty",
+    "title": "GLP-1–Induced Weight Loss and the Female Obesity Penalty",
+    "coauthors": [],
+    "year": 2026,
+    "date": "June 2026",
+    "status": "",
+    "topics": [
+      "Labor",
+      "Inequality"
+    ],
+    "category": "Working papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQDr4rrWR8fjRalsLtoBVk_pAcI-ajxVi6a5Opr4DBB3Qpc?e=5LuyU1",
+    "abstract": "GLP-1 medications generate large weight loss and may also alter social and economic outcomes. Using the Understanding America Study, I compare women starting GLP-1s for weight loss with matched women who would like to start a GLP-1 but have not. Single women’s marriage/cohabitation rates rise by 29 percentage points and employment among baseline non-employed women rises 27 percentage points after six or more quarters. Existing partnerships do not dissolve, and already-employed women show no upward job mobility. The pattern suggests that part of the female obesity penalty operates at new-match formation rather than only through health or incumbent productivity.",
+    "recent": true,
+    "abstractSource": "https://www.nber.org/papers/w35387",
+    "abstractLabel": "NBER working paper, June 2026",
+    "authors": [
+      "Rebecca Diamond"
+    ],
+    "citation": "@techreport{glp1obesitypenalty2026,\n  title = {GLP-1–Induced Weight Loss and the Female Obesity Penalty},\n  author = {Rebecca Diamond},\n  year = {2026},\n  institution = {National Bureau of Economic Research},\n  number = {35387},\n  doi = {10.3386/w35387},\n  url = {https://www.nber.org/papers/w35387}\n}"
+  },
+  {
+    "slug": "rental-property-ownership",
+    "title": "Toward a Methodology for Measuring Rental Property Ownership in the United States",
+    "coauthors": [
+      "Stephanie Kestelman",
+      "John Eric Humphries",
+      "Kate Pennington",
+      "Winnie van Dijk",
+      "John Voorheis"
+    ],
+    "year": 2026,
+    "date": "May 2026",
+    "status": "Prepared for the 2026 CRIW, Measurement of Housing and the Housing Sector",
+    "topics": [
+      "Housing"
+    ],
+    "category": "Working papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQBZPTu6qPiMRKzki2fPaXfbAcJhu6SN1r3zfDX0yY_Hzo8?e=eOn6Bz",
+    "abstract": "Roughly one-third of U.S. households rent their homes, yet measuring who owns rental property is difficult: ownership is frequently obscured by LLCs, partnerships, and other intermediary entities that separate legal from economic control. We develop a method that traces ownership through administrative records—combining deeds and property assessments with the Census Bureau’s Business Register, IRS Schedule K-1 filings, and SEC filings on REITs—to identify ultimate owners and construct property portfolios across the full landlord size distribution. Applying the method to 11 large CBSAs, we find that individual landlords own a majority of rental units, though their share varies meaningfully across markets. We also show that the widely used mailing-address aggregation approach both under- and over-states portfolio size in systematic ways. The method is designed to scale to national coverage and to support measurement of landlord identity, portfolio composition, and ownership concentration in U.S. rental markets. We also discuss the method’s current limitations and outline directions for refinement and validation.",
+    "recent": true,
+    "abstractSource": "https://www.nber.org/papers/w35258",
+    "abstractLabel": "NBER working paper, June 2026",
+    "authors": [
+      "Stephanie Kestelman",
+      "Rebecca Diamond",
+      "John Eric Humphries",
+      "Kate Pennington",
+      "Winnie van Dijk",
+      "John L. Voorheis"
+    ],
+    "citation": "@techreport{rentalpropertyownership2026,\n  title = {Towards a Methodology for Measuring Rental Property Ownership in the United States},\n  author = {Stephanie Kestelman and Rebecca Diamond and John Eric Humphries and Kate Pennington and Winnie van Dijk and John L. Voorheis},\n  year = {2026},\n  institution = {National Bureau of Economic Research},\n  number = {35258},\n  doi = {10.3386/w35258},\n  url = {https://www.nber.org/papers/w35258}\n}"
+  },
+  {
+    "slug": "hope-vi",
+    "title": "Creating High-Opportunity Neighborhoods: Evidence from the HOPE VI Program",
+    "coauthors": [
+      "Raj Chetty",
+      "Thomas B. Foster",
+      "Lawrence Katz",
+      "Sonya R. Porter",
+      "Matthew Staiger",
+      "Laura Tach"
+    ],
+    "year": 2026,
+    "date": "January 2026",
+    "status": "Revise and resubmit, American Economic Review",
+    "topics": [
+      "Housing",
+      "Cities",
+      "Inequality"
+    ],
+    "category": "Working papers",
+    "pdf": "https://opportunityinsights.org/wp-content/uploads/2025/09/HopeVI_Paper.pdf",
+    "abstract": "We study whether low-economic-mobility neighborhoods can be transformed into high-mobility areas by analyzing the HOPE VI program, which invested $17 billion to revitalize 262 distressed public housing developments. We estimate the program’s impacts using a matched difference-in-differences design, comparing outcomes in revitalized developments to observably similar control developments using anonymized tax records. HOPE VI reduced neighborhood poverty rates by attracting higher-income families to revitalized neighborhoods, but had no causal impact on the earnings of adults living in public housing units. Children raised in revitalized public housing units earn more, are more likely to attend college, and are less likely to be incarcerated. Using a movers exposure design and sibling comparisons, we show that these improvements were driven by changes in neighborhoods’ causal effects on children’s outcomes. The improvements in neighborhood causal effects were driven in large part by changes in social interaction: HOPE VI increased interaction between public housing residents and peers in surrounding neighborhoods and increased earnings more for subgroups with higher-income peers. Many low-income families in the U.S. currently live in neighborhoods that are as socially isolated as the HOPE VI developments were prior to revitalization. We conclude that it is feasible to create high-opportunity neighborhoods and that connecting socially isolated areas to surrounding communities is a cost-effective approach to doing so.",
+    "recent": true,
+    "authors": [
+      "Raj Chetty",
+      "Rebecca Diamond",
+      "Thomas B. Foster",
+      "Lawrence Katz",
+      "Sonya R. Porter",
+      "Matthew Staiger",
+      "Laura Tach"
+    ],
+    "abstractSource": "https://opportunityinsights.org/paper/hopevi/",
+    "directPdf": true,
+    "citation": "@techreport{hopevi2026,\n  title = {Creating High-Opportunity Neighborhoods: Evidence from the HOPE VI Program},\n  author = {Raj Chetty and Rebecca Diamond and Thomas B. Foster and Lawrence Katz and Sonya R. Porter and Matthew Staiger and Laura Tach},\n  year = {2026},\n  institution = {National Bureau of Economic Research},\n  number = {34720},\n  url = {https://opportunityinsights.org/paper/hopevi/}\n}"
+  },
+  {
+    "slug": "geography-of-consumption",
+    "title": "Where is Standard of Living the Highest? Local Prices and the Geography of Consumption",
+    "coauthors": [
+      "Enrico Moretti"
+    ],
+    "year": 2026,
+    "date": "May 2026",
+    "status": "Conditionally accepted, Review of Economic Studies",
+    "topics": [
+      "Cities",
+      "Inequality"
+    ],
+    "category": "Working papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQA6gt4qlukhTorsWNA2zSV6AXTRaOc1DsXBD57UHmsWayo?e=Zqv8vB",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "immigrants-and-innovation",
+    "title": "The Contribution of High-Skilled Immigrants to Innovation in the United States",
+    "coauthors": [
+      "Shai Bernstein",
+      "Abhisit Jiranaphawiboon",
+      "Tim McQuade",
+      "Beatriz Pousada"
+    ],
+    "year": 2025,
+    "date": "December 2025",
+    "status": "Conditionally accepted, American Economic Review",
+    "topics": [
+      "Labor",
+      "Cities"
+    ],
+    "category": "Working papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQCTrLI5sXUzQIEwEfXdcLsiAVxM5XL3Cb-DQTBPq9PHPJQ?e=uL2A2z",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "foreclosures",
+    "title": "The Effect of Foreclosures on Homeowners, Tenants, and Landlords",
+    "coauthors": [
+      "Adam Guren",
+      "Rose Tan"
+    ],
+    "year": 2026,
+    "date": "April 2026",
+    "status": "Revise and resubmit, Review of Economic Studies",
+    "topics": [
+      "Housing",
+      "Inequality"
+    ],
+    "category": "Working papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQBBIxaSvOjlRacJjhGrbiz5AdO-F8fMWRtxcTAl82Giwbs?e=ZD2jGn",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "housing-returns",
+    "title": "Racial Differences in the Total Rate of Return on Owner-Occupied Housing",
+    "coauthors": [
+      "William Diamond"
+    ],
+    "year": 2024,
+    "date": "August 2024",
+    "status": "",
+    "topics": [
+      "Housing",
+      "Inequality"
+    ],
+    "category": "Working papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/EZGJRssy7t5Hr9Y0YlsP_CgBgKRKLk8vPp4gJF-Zh-u9Xg?e=6OYZRL",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "insurance-without-commitment",
+    "title": "Insurance without Commitment: Evidence from ACA Marketplaces",
+    "coauthors": [
+      "Michael Dickstein",
+      "Tim McQuade",
+      "Petra Persson"
+    ],
+    "year": 2021,
+    "date": "March 2021",
+    "status": "",
+    "topics": [
+      "Public economics"
+    ],
+    "category": "Working papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/EUjIEP3tYHpKkQ6f2aaJ7tgBouhyUYv1cAaIRYl49qv6Fw",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "teacher-discretion",
+    "title": "The Long-term Consequences of Teacher Discretion in Grading of High-Stakes Tests",
+    "coauthors": [
+      "Petra Persson"
+    ],
+    "year": 2017,
+    "date": "October 2017",
+    "status": "",
+    "topics": [
+      "Labor",
+      "Public economics"
+    ],
+    "category": "Working papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/EckDDLUqdB9Mu-1VN_P27KABvgwzViJesOe6Ob9h_tCfnQ?e=4icjPu",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "spatial-sorting-handbook",
+    "title": "Spatial Sorting and Inequality",
+    "coauthors": [
+      "Juan Carlos Suárez Serrato"
+    ],
+    "year": 2025,
+    "date": "",
+    "status": "Handbook of Regional and Urban Economics, 2025",
+    "topics": [
+      "Cities",
+      "Inequality"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/EYeZxceoNvxIoMQ1S7-eUPQBaVwnjsQCBWRDuXKOJ-iG9A?e=FpGf9d",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "housing-affordability",
+    "title": "Affordability of Owner-Occupied Housing Across US Cities",
+    "coauthors": [
+      "William Diamond"
+    ],
+    "year": 2024,
+    "date": "",
+    "status": "AEA Papers and Proceedings, 2024",
+    "topics": [
+      "Housing",
+      "Cities"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQDa_iPf15VeS5sIc8tQF1o9Acqlnrx9R6lflZQb9sAZz9I?e=X1bfpy",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "spatial-sorting",
+    "title": "Spatial Sorting and Inequality",
+    "coauthors": [
+      "Cecile Gaubert"
+    ],
+    "year": 2022,
+    "date": "",
+    "status": "Annual Review of Economics, 2022",
+    "topics": [
+      "Cities",
+      "Inequality"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQDNCajWvvusQ7NrMSkqZt1IAYiQwA4pTXPxA4TxI-UEyCs?e=qF5t4O",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "gig-economy-earnings-gap",
+    "title": "The Gender Earnings Gap in the Gig Economy: Evidence from over a Million Rideshare Drivers",
+    "coauthors": [
+      "Cody Cook",
+      "Jonathan Hall",
+      "John List",
+      "Paul Oyer"
+    ],
+    "year": 2021,
+    "date": "",
+    "status": "Review of Economic Studies, 88(5), 2210–2238, 2021",
+    "topics": [
+      "Labor",
+      "Inequality"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQBhPrT5-Ku1QLmRwWrObyanAXv7wwlCttr-3u2NyrqgkeA?e=pwlpPH",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "food-deserts",
+    "title": "Food Deserts and the Causes of Nutritional Inequality",
+    "coauthors": [
+      "Hunt Allcott",
+      "Jean-Pierre Dubé",
+      "Jessie Handbury",
+      "Ilya Rahkovsky",
+      "Molly Schnell"
+    ],
+    "year": 2019,
+    "date": "",
+    "status": "Quarterly Journal of Economics, 134(4), 1793–1844, 2019",
+    "topics": [
+      "Inequality",
+      "Public economics"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQBcU_nCl68ZRqAEtuDoDNmfATrOdsRTCrcwH51dqTOjbLc?e=jOOHaC",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "rent-control",
+    "title": "The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco",
+    "coauthors": [
+      "Tim McQuade",
+      "Franklin Qian"
+    ],
+    "year": 2019,
+    "date": "",
+    "status": "American Economic Review, 109(9), 3365–3394, 2019",
+    "topics": [
+      "Housing",
+      "Cities",
+      "Inequality"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQCbMP1NzbrdQ6OUSIPyIwnGAVf3J9vrA5tmx7uuUW-rLBE?e=lR2HB8",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "affordable-housing",
+    "title": "Who Wants Affordable Housing in their Backyard? An Equilibrium Analysis of Low Income Property Development",
+    "coauthors": [
+      "Tim McQuade"
+    ],
+    "year": 2019,
+    "date": "",
+    "status": "Journal of Political Economy, 127(3), 1063–1117, 2019",
+    "topics": [
+      "Housing",
+      "Cities"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQASRi8Nj-UOQZWk366dU9VBARmbqBU8Gfc8xHB71ysaoD0?e=DTsc9V",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "who-pays-rent-control",
+    "title": "Who Pays for Rent Control? Heterogeneous Landlord Response to San Francisco's Rent Control Expansion",
+    "coauthors": [
+      "Tim McQuade",
+      "Franklin Qian"
+    ],
+    "year": 2019,
+    "date": "",
+    "status": "AEA Papers and Proceedings, 109, 377–380, 2019",
+    "topics": [
+      "Housing",
+      "Cities"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQC3VAOOTELAT4dap2_ejsUDAaQkYC5BW2rggJVwHOFFYsE?e=FLDBO8",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "older-workers",
+    "title": "Older Workers and the Gig Economy",
+    "coauthors": [
+      "Cody Cook",
+      "Paul Oyer"
+    ],
+    "year": 2019,
+    "date": "",
+    "status": "AEA Papers and Proceedings, 109, 372–376, 2019",
+    "topics": [
+      "Labor"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQB1CEBQKJZrSJ9mZhfh1CAaATt2TEhCfJdFPpPU-YwBDT8?e=esWhnD",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "housing-supply-elasticity",
+    "title": "Housing Supply Elasticity and Rent Extraction by State and Local Governments",
+    "coauthors": [],
+    "year": 2017,
+    "date": "",
+    "status": "American Economic Journal: Economic Policy, 9(1), 74–111, 2017",
+    "topics": [
+      "Housing",
+      "Public economics"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQDd03Y3w874SJ9zJkzQ84gEAZB4gzudFMIWakrjwNfqBr4?e=HeLSEw",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "location-choices",
+    "title": "The Determinants and Welfare Implications of US Workers' Diverging Location Choices by Skill: 1980-2000",
+    "coauthors": [],
+    "year": 2016,
+    "date": "",
+    "status": "American Economic Review, 106(3), 479–524, 2016",
+    "topics": [
+      "Cities",
+      "Labor",
+      "Inequality"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQBbO3wslZ27R6RJ29YcsnbIAR05zQEtbdJrzFM6yz3cs3o?e=XklsPw",
+    "abstract": "",
+    "recent": false
+  },
+  {
+    "slug": "randomization-inference",
+    "title": "Clustering, Spatial Correlations and Randomization Inference",
+    "coauthors": [
+      "Thomas Barrios",
+      "Guido W. Imbens",
+      "Michal Kolesár"
+    ],
+    "year": 2012,
+    "date": "",
+    "status": "Journal of the American Statistical Association, 107(498), 578–591, 2012",
+    "topics": [
+      "Methods"
+    ],
+    "category": "Published papers",
+    "pdf": "https://hu-my.sharepoint.com/:b:/g/personal/rdiamond_fas_harvard_edu/IQAd3miC-Wk8RqnDt3_70Zh5AWGeZFMnwHDjTEUT5Q19lb8?e=Dl3GGj",
+    "abstract": "",
+    "recent": false
+  }
+]
